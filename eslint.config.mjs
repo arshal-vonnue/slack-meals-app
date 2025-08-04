@@ -1,17 +1,5 @@
-import prettierConfig from "eslint-config-prettier";
-import prettierPlugin from "eslint-plugin-prettier";
+import prettierConfig from "eslint-config-prettier/flat";
 
-const eslintConfig = [
-  {
-    plugins: { prettier: prettierPlugin },
-    rules: {
-      "prettier/prettier": "warn",
-    },
-  },
-  {
-    name: "prettier-config",
-    ...prettierConfig,
-  },
-];
+const eslintConfig = [prettierConfig];
 
 export default eslintConfig;

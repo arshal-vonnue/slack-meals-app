@@ -9,7 +9,7 @@
     "start": "node .",
     "lint": "eslint --cache",
     "lint:fix": "eslint --cache --fix",
-    "format": "prettier --write",
+    "format": "prettier **/*.{ts,js,json,md}  --write",
     "prepare": "husky"
   },
   "keywords": [],
